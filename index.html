@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exeo-Mockup</title>
+    <link rel="icon" href="elements/icons/Graphic_Elements.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <script src="https://kit.fontawesome.com/b0d1ea844f.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    
+    <script>
+      //adding and removing classes of bootstrap for responsive design
+
+        //footer
+        $(document).ready(function(){
+        if(window.innerWidth < 768){
+            $('.row-cols-6').removeClass('row-cols-6');
+            $(".col2").hide();
+            $('.col1').addClass('col-6');}
+        else if (window.innerWidth > 768) {
+        $('.row').addClass('row-cols-6');
+        $(".col2").show();
+        $('.col1').removeClass('col-6');}
+        });
+        
+        $(window).resize(function(){
+        if(window.innerWidth < 768){
+            $('.row-cols-6').removeClass('row-cols-6');
+            $(".col2").hide();
+            $('.col1').addClass('col-6');
+        }
+        else if (window.innerWidth > 768) {
+            $('.row').addClass('row-cols-6');
+            $(".col2").show();
+            $('.col1').removeClass('col-6');}
+        });
+
+        //section3
+
+        $(document).ready(function(){
+        if(window.innerWidth < 768){
+            $('.sec3-col6').removeClass('col-6');
+            $('.sec3-col4').removeClass('col-4');
+            $('.sec3-col2').removeClass('col-2');
+        }
+        else if (window.innerWidth > 768) {
+            $('.sec3-col6').addClass('col-6');
+            $('.sec3-col4').addClass('col-4');
+            $('.sec3-col2').addClass('col-2');
+        }
+        });
+        
+        $(window).resize(function(){
+        if(window.innerWidth < 768){
+            $('.sec3-col6').removeClass('col-6');
+            $('.sec3-col4').removeClass('col-4');
+            $('.sec3-col2').removeClass('col-2');
+        }
+        else if (window.innerWidth > 768) {
+            $('.sec3-col6').addClass('col-6');
+            $('.sec3-col4').addClass('col-4');
+            $('.sec3-col2').addClass('col-2');
+        }
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="elements/images/logo.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Next
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Terms of Use</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    FrontEnd
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Terms of Use</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Developer
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Terms of Use</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Challenge
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Terms of Use</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                  </ul>
+              </li>
+            </ul>
+        
+            <div class="d-flex">
+              <button class="search-btn" type="search"><img src="elements/icons/search_h.svg" alt="search-image"></button>
+              <button class="lang-btn" type="button"><img src="elements/icons/globe_h.svg" alt="globe-image"></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="elements/icons/arrow.svg" alt="back-at-the-top"></button>
+
+       <div class="slider" onclick="changeBackgroundAndText()" >
+        <span id="circle" class="circle"></span>
+        <img class="img-layer1" src="elements/icons/arrow-left-slider-beige.svg" alt="arrow-left-animate">
+        <img class="img-layer2" src="elements/icons/slash.svg" alt="slash-animate">
+        <img class="img-layer3" src="elements/icons/arrow-right-slider-beige.svg" alt="arrow-left-animate">
+        <img class="img-layer4" src="elements/icons/arrow_nav.svg" alt="arrow-right-mini-animate">
+        <div class="fadeIn-h1">
+        <h1 class="h1-slider">Welcome to our Next Front End Developer challenge</h1>
+        </div>
+        <button type="button" class="discover-btn-slider">Discover <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </header>
+
+    <section class="section1">
+        <img data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"src="elements/images/welcome_image.jpg" alt="welcome-img">
+        <div class="info" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+        <h4>“First, solve the problem. Then write the code.” - John Johnson</h4>
+        <p>Do not think that any software error or bug will be gone by the time you will deploy another fresh code snippet into your backend architecture. It is completely false. Look into the root of the problem, solve it, test it again, and only if all of these three things are good, you may go ahead and write new code for your web application.</p>
+        <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <section class="section2">
+        <img class="arrow-beige-right" src="elements/icons/arrow-right-section2.svg" alt="arrow">
+        <h2>Do your own things</h2>
+        <div class="card">
+            <div class="img-hover-zoom">
+            <img src="elements/images/pexels-photo-3205570 1.jpg" class="card-img-top" alt="Working with us is fun!"></div>
+            <div class="card-body">
+              <h5 class="card-title">Working with us is fun!</h5>
+              <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-hover-zoom">
+            <img src="elements/images/pexels-photo-1181490.jpg" class="card-img-top" alt="Working with us is fun!"></div>
+            <div class="card-body">
+              <h5 class="card-title">Working with us is fun!</h5>
+              <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-hover-zoom">
+            <img src="elements/images/pexels-photo-1181533.jpg" class="card-img-top" alt="Working with us is fun!"></div>
+            <div class="card-body">
+              <h5 class="card-title">Working with us is fun!</h5>
+              <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-hover-zoom">
+            <img src="elements/images/pexels-photo-3205568.jpg" class="card-img-top" alt="Working with us is fun!"></div>
+            <div class="card-body">
+              <h5 class="card-title">Working with us is fun!</h5>
+              <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <img class="arrow-beige-left" src="elements/icons/arrow-left-section2.svg" alt="arrow">
+    </section>
+
+    <section oncontextmenu='return false' class="section3">
+        <div class="container">
+        <div class="row">
+        <div class="col-6 sec3-col6">
+            <h3 class="mb-3">Front end 
+                Development is cool</h3>
+        </div>
+        <div class="col-4 sec3-col4">
+            <p>“Writing the first 90 percent of a computer program takes 90 percent of the time. The remaining ten percent also takes 90 percent of the time and the final touches also take 90 percent of the time.” - N.J. Rubenking</p>
+        </div>
+        <div class="col-2 sec3-col2">
+            <a href="#carouselExampleIndicators2" role="button" class="btn-slider" data-slide="prev">
+            <img src="elements/icons/btn-slider-left.svg" alt="arrow-left">
+            </a>
+            <a class="btn-slider" href="#carouselExampleIndicators2" role="button" data-slide="next">
+            <img src="elements/icons/btn-slider-right.svg" alt="arrow-right">
+            </a>
+        </div>
+        <div class="col-12">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <div class="row">
+
+        <div class="col-md-4 mb-3">
+        <div class="card">
+            <img class="img-fluid" alt="100%x280" src="elements/images/pexels-andrea-piacquadio-935756 1.jpg">
+        <div class="card-body">
+            <h4 class="card-title">Talk is cheap. Show me the code.</h4>
+            <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+
+        </div>
+
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+            <img class="img-fluid" alt="100%x280" src="elements/images/pexels-andrea-piacquadio-935756 1.jpg">
+        <div class="card-body">
+            <h4 class="card-title">Talk is cheap. Show me the code.</h4>
+            <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+            <img class="img-fluid" alt="100%x280" src="elements/images/pexels-andrea-piacquadio-935756 1.jpg">
+        <div class="card-body">
+            <h4 class="card-title">Talk is cheap. Show me the code.</h4>
+            <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="row">
+
+        <div class="col-md-4 mb-3">
+        <div class="card">
+            <img class="img-fluid" alt="100%x280" src="elements/images/pexels-andrea-piacquadio-935756 1.jpg">
+        <div class="card-body">
+            <h4 class="card-title">Talk is cheap. Show me the code.</h4>
+            <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+
+        </div>
+
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+            <img class="img-fluid" alt="100%x280" src="elements/images/pexels-andrea-piacquadio-935756 1.jpg">
+        <div class="card-body">
+            <h4 class="card-title">Talk is cheap. Show me the code.</h4>
+            <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card">
+            <img class="img-fluid" alt="100%x280" src="elements/images/pexels-andrea-piacquadio-935756 1.jpg">
+        <div class="card-body">
+            <h4 class="card-title">Talk is cheap. Show me the code.</h4>
+            <button type="button" class="discover-btn">Discover <i class="fas fa-arrow-right"></i></button>
+
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="container-html"></div>
+        <div class="container-css"></div>
+        <div class="container-js"></div>
+    </section>
+
+    <footer class="row row-cols-6">
+        <div class="col col1">
+            <img src="elements/images/logo.png" alt="logo">
+        </a>
+        </div>
+        <div class="col col2">
+        </div>
+        <div class="col">
+        <h5>Useful info</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Terms of Use</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
+        </ul>
+        </div>
+    
+        <div class="col">
+        <h5>What to do</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Terms of Use</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
+        </ul>
+        </div>
+    
+        <div class="col">
+        <h5>Contact</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Terms of Use</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
+        </ul>
+        </div>
+
+        <div class="col">
+        <h5>Follow Us</h5>
+            <a href="#" class="nav-link"><img src="elements/icons/fb.svg" alt="facebook"></a>
+            <a href="#" class="nav-link"><img src="elements/icons/ig.svg" alt="instagram"></a>
+            <a href="#" class="nav-link"><img src="elements/icons/yt.svg" alt="youtube"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
